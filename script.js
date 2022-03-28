@@ -35,17 +35,17 @@
 		for(var i of psmallimg)
 		{
 			if (q==0) {i.style.left = "0px";}
-			if (q==1) {i.style.left = "-100px";}
-			if (q==2) {i.style.left = "-200px";}
-			if (q==3) {i.style.left = "-300px";}
-			if (q==4) {i.style.left = "-400px";}
-        	if (q==5) {i.style.left = "-500px";}
-            if (q==6) {i.style.left = "-600px";}
-        	if (q==7) {i.style.left = "-700px";}
-        	if (q==8) {i.style.left = "-800px";}
-        	if (q==9) {i.style.left = "-900px";}
-        	if (q==10) {i.style.left = "-1000px";}
-        	if (q==11) {i.style.left = "-1100px";}
+			if (q==1) {i.style.left = "-150px";}
+			if (q==2) {i.style.left = "-300px";}
+			if (q==3) {i.style.left = "-450px";}
+			if (q==4) {i.style.left = "-600px";}
+        	if (q==5) {i.style.left = "-750px";}
+            if (q==6) {i.style.left = "-900px";}
+        	if (q==7) {i.style.left = "-1050px";}
+        	if (q==8) {i.style.left = "-1200px";}
+        	if (q==9) {i.style.left = "-1350px";}
+        	if (q==10) {i.style.left = "-1500px";}
+        	if (q==11) {i.style.left = "-1650px";}
 
 
 			if (q>5) {q=5;}

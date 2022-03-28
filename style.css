@@ -16,6 +16,13 @@
 .product__small-image-slider {
   overflow: visible;
 }
+.product-slider__btn {
+  transform: scale(1.1);
+  transition: 0.4s all;
+}
+.product-slider__btn:hover {
+  transform: scale(1.5);
+}
 .product-slider__btn-one {
   position: absolute;
   top: 40%;
@@ -49,7 +56,7 @@
 
 .product__small-images {
   width: 85%;
-  margin: 5px auto;
+  margin: 3px auto;
   display: flex;
   justify-content: left;
   overflow-x: hidden;
@@ -68,16 +75,17 @@
 }
 
 .psmallimg {
-  min-width: 91px;
-  height: 90px;
+  min-width: 141px;
+  height: 140px;
   position: relative;
   left: 0px;
   margin-right: 10px;
   border-radius: 5px;
   transition: 0.5s all;
+  transform: scale(0.9);
 }
 .psmallimg:hover {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 @media screen and (min-width: 710px) {
