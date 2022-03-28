@@ -1,6 +1,7 @@
 .w-custom {
   width: 25rem;
 }
+
 .text-custom-color {
   color: hsl(337, 41%, 32%);
 }
@@ -11,4 +12,9 @@
 }
 .btn-custom:hover {
   background-color: hsl(334, 42%, 26%);
+}
+@media screen and (min-width: 710px) {
+  .w-custom {
+    width: 96rem;
+  }
 }
