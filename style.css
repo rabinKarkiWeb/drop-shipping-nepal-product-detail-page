@@ -13,6 +13,73 @@
 .btn-custom:hover {
   background-color: hsl(334, 42%, 26%);
 }
+.product__small-image-slider {
+  overflow: visible;
+}
+.product-slider__btn-one {
+  position: absolute;
+  top: 40%;
+  color: hsl(337, 44%, 25%);
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 55;
+}
+
+.product-slider__btn-one:hover {
+  color: hsl(337, 45%, 44%);
+}
+
+.product-slider__btn-two {
+  position: absolute;
+  right: 00.5%;
+  top: 40%;
+  color: hsl(337, 44%, 25%);
+  cursor: pointer;
+  z-index: 55;
+}
+.product-slider__btn-two:hover {
+  color: hsl(337, 45%, 44%);
+}
+
+/* .product-detail__preview-pane:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1000;
+} */
+
+.product__small-images {
+  width: 85%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.product__small-images::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.product__small-images {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.psmallimg {
+  min-width: 91px;
+  height: 90px;
+  position: relative;
+  left: 0px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+.psmallimg:hover {
+  transform: scale(0.9);
+}
+
 @media screen and (min-width: 710px) {
   .w-custom {
     width: 96rem;

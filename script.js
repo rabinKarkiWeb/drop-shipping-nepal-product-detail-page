@@ -1,3 +1,4 @@
+//  code for previewing small image on previewing pane
  var PreviewImg = document.getElementById('PreviewImg');
         var psmallimg = document.getElementsByClassName('psmallimg');
 
@@ -25,30 +26,45 @@
         psmallimg[7].onclick = function(){
             PreviewImg.src = psmallimg[7].src;
         }
-        psmallimg[8].onclick = function(){
-            PreviewImg.src = psmallimg[8].src;
-        }
-        psmallimg[9].onclick = function(){
-            PreviewImg.src = psmallimg[9].src;
-        }
-        psmallimg[10].onclick = function(){
-            PreviewImg.src = psmallimg[9].src;
-        }
+        
+// code for the product image slider
+    var psliderbtn = document.getElementsByClassName('product-slider__btn');
+	var q = 0;
+	psliderbtn[1].onclick = ()=>{
+		q++;
+		for(var i of psmallimg)
+		{
+			if (q==0) {i.style.left = "0px";}
+			if (q==1) {i.style.left = "-100px";}
+			if (q==2) {i.style.left = "-200px";}
+			if (q==3) {i.style.left = "-300px";}
+			if (q==4) {i.style.left = "-400px";}
+        	if (q==5) {i.style.left = "-500px";}
+            if (q==6) {i.style.left = "-600px";}
+        	if (q==7) {i.style.left = "-700px";}
+        	if (q==8) {i.style.left = "-800px";}
+        	if (q==9) {i.style.left = "-900px";}
+        	if (q==10) {i.style.left = "-1000px";}
+        	if (q==11) {i.style.left = "-1100px";}
 
-        // code for the slider
-        const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
+			if (q>5) {q=5;}
+		}
+	}
+	psliderbtn[0].onclick = ()=>{
+		q--; 
+		for(var i of psmallimg)
+		{	
+			if (q==0) {i.style.left = "0px";}
+			if (q==1) {i.style.left = "-100px";}
+			if (q==2) {i.style.left = "-200px";}
+			if (q==3) {i.style.left = "-300px";}
+            if (q==4) {i.style.left = "-400px";}
+        	if (q==5) {i.style.left = "-500px";}
+            if (q==6) {i.style.left = "-600px";}
+        	if (q==7) {i.style.left = "-700px";}
+        	if (q==8) {i.style.left = "-800px";}
+        	if (q==9) {i.style.left = "-900px";}
+			if (q < 0) {q=0;}
+		}
+	}
