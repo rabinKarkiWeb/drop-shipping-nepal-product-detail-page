@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0aa4506761.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
@@ -14,17 +15,30 @@
     <link rel="stylesheet" href="style.css" />
     <title>Product details</title>
   </head>
-  <body class="">
-    <div class="container flex justify-center pt-6">
-      <div class="">
-        <img class="w-custom pb-1" id="PreviewImg" src="/images/1.jpg" alt="image" />
-        <div class="flex justify-between">
-          <img class="psmallimg w-24" src="/images/2.jpg" alt="image" />
-          <img class="psmallimg w-24" src="/images/3.jpg" alt="image" />
-          <img class="psmallimg w-24" src="/images/4.jpg" alt="image" />
-          <img class="psmallimg w-24" src="/images/5.jpg" alt="image" />
+  <body class="flex justify-center content-center">
+
+
+    <div class="container flex justify-center content-center pt-6">
+        <div class="w-custom">
+          <img class="w-custom pb-1" id="PreviewImg" src="/images/1.jpg" alt="image" />
+
+          <div class="small-img-container flex gap-x-2 overflow-auto inline">
+            <img class="psmallimg w-28" src="/images/2.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/3.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/4.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/5.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/6.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/7.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/8.jpg" alt="image" />
+            <img class="psmallimg w-28" src="/images/9.jpg" alt="image" />
+            <video class="psmallimg w-28" src="https://www.youtube.com/watch?v=OQZNAMjC6Vg"></video>
+
+          </div>
+          <div class="inline">
+              <i class="fa-solid fa-angles-left"></i>
+              <i class="fa-solid fa-angles-right"></i>
+          </div>
         </div>
-      </div>
 
 
 
@@ -54,23 +68,9 @@
         </div>
       </div>
     </div>
-    <script>
-        var PreviewImg = document.getElementById('PreviewImg');
-        var psmallimg = document.getElementsByClassName('psmallimg');
-
-        psmallimg[0].onclick = function(){
-            PreviewImg.src = psmallimg[0].src;
-        }
-        psmallimg[1].onclick = function(){
-            PreviewImg.src = psmallimg[1].src;
-        }
-        psmallimg[2].onclick = function(){
-            PreviewImg.src = psmallimg[2].src;
-        }
-        psmallimg[3].onclick = function(){
-            PreviewImg.src = psmallimg[3].src;
-        }
-    </script>
+    
 
   </body>
 </html>
+
+
