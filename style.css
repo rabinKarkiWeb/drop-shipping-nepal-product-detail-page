@@ -1,0 +1,14 @@
+.w-custom {
+  width: 25rem;
+}
+.text-custom-color {
+  color: hsl(337, 41%, 32%);
+}
+.btn-custom {
+  background-color: hsl(337, 45%, 44%);
+  color: hsl(0, 0%, 100%);
+  transition: all 0.2s linear;
+}
+.btn-custom:hover {
+  background-color: hsl(334, 42%, 26%);
+}
