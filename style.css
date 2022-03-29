@@ -5,6 +5,7 @@
 .text-custom-color {
   color: hsl(337, 41%, 32%);
 }
+
 .btn-custom {
   background-color: hsl(337, 45%, 44%);
   color: hsl(0, 0%, 100%);
@@ -13,15 +14,23 @@
 .btn-custom:hover {
   background-color: hsl(334, 42%, 26%);
 }
+.btn-custom:active {
+  box-shadow: 0px 0px 14px 11px rgba(96, 80, 80, 0.23) inset;
+  -webkit-box-shadow: 0px 0px 14px 11px rgba(96, 80, 80, 0.23) inset;
+  -moz-box-shadow: 0px 0px 14px 11px rgba(96, 80, 80, 0.23) inset;
+  transform: scale(0.96);
+  transform: scaleY(-2px);
+  background-color: hsl(337, 45%, 44%);
+}
 .product__small-image-slider {
   overflow: visible;
 }
 .product-slider__btn {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: 0.4s all;
 }
 .product-slider__btn:hover {
-  transform: scale(1.5);
+  transform: scale(2);
 }
 .product-slider__btn-one {
   position: absolute;
@@ -55,7 +64,7 @@
 } */
 
 .product__small-images {
-  width: 85%;
+  width: 84%;
   margin: 3px auto;
   display: flex;
   justify-content: left;
@@ -81,11 +90,15 @@
   left: 0px;
   margin-right: 10px;
   border-radius: 5px;
-  transition: 0.5s all;
+  transition: 0.4s all;
   transform: scale(0.9);
 }
 .psmallimg:hover {
   transform: scale(1);
+  cursor: pointer;
+}
+.psmallimg:active {
+  transform: scale(0.8);
 }
 
 @media screen and (min-width: 710px) {
