@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/0aa4506761.js"
       crossorigin="anonymous"
     ></script>
+    <!-- tailwind -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
@@ -15,18 +17,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <title>Product details</title>
   </head>
   <body class="flex justify-center content-center">
     <div
-      class="w-5/6 flex flex-col justify-center lg:flex-row py-6 mt-4 gap-x-4"
+      class="w-5/6 flex flex-col justify-center lg:flex-row py-6 mt-4 gap-x-6"
     >
       <div
         class="w-full sm:w-4/5 lg:w-2/6 mx-auto self-center lg:mx-0 lg:ml-auto"
       >
         <img
-          class="product-detail__preview-pane pb-1 w-full rounded-t-md"
+          class="product-detail__preview-pane pb-1 w-full rounded-md"
           id="PreviewImg"
           src="/images/1.jpg"
           alt="image"
@@ -34,10 +38,10 @@
 
         <div class="product__small-image-slider hidden relative lg:flex inline">
           <i
-            class="product-slider__btn product-slider__btn-one absolute hidden lg:inline fa-solid fa-angles-left"
+            class="product-slider__btn product-slider__btn-one absolute hidden lg:inline fa-solid fa-circle-chevron-left"
           ></i>
           <i
-            class="product-slider__btn product-slider__btn-two absolute hidden lg:inline fa-solid fa-angles-right"
+            class="product-slider__btn product-slider__btn-two absolute hidden lg:inline fa-solid fa-circle-chevron-right"
           ></i>
           <div class="product__small-images">
             <img class="psmallimg" src="/images/2.jpg" alt="image" />
@@ -51,7 +55,39 @@
           </div>
         </div>
       </div>
+      <!-- hhhhh -->
 
+      <!-- owl-carousel -->
+      <div class="lg:hidden owl-carousel owl-theme">
+        <div class="item">
+          <img class="psmallimg" src="/images/2.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/2.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/3.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/4.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/5.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/6.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/7.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/8.jpg" alt="image" />
+        </div>
+        <div class="item">
+          <img class="psmallimg" src="/images/9.jpg" alt="image" />
+        </div>
+      </div>
+      <!-- </div> -->
       <div class="w-full sm:w-4/5 md:2/6 lg:2/6 mx-auto lg:mx-0 lg:mr-auto">
         <div class="hidden lg:block">
           <a href="">
@@ -62,7 +98,7 @@
           </a>
         </div>
 
-        <h3 class="text-xl sm:text-2xl pt-2 pb-1 lg:mb-2 font-bold">
+        <h3 class="text-md lg:text-2xl pt-2 pb-1 lg:mb-2 font-bold">
           Bike cover with perfect cutout for all sizes with perfect water
           resillent aesthetic design ergonomic cutout for best people revolving
           around best things
@@ -89,6 +125,18 @@
         </div>
       </div>
     </div>
+
+    <!-- jquery -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="owlcarousel/owl.carousel.min.js"></script> -->
+
+    <!-- custom  js -->
     <script src="script.js"></script>
   </body>
 </html>

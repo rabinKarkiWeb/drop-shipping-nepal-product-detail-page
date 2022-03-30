@@ -68,5 +68,5 @@
 		}
 	}
 
-    //code for image magnifier
-    //code not written for image magnifier
+    
+  
