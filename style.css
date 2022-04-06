@@ -1,3 +1,39 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  object-fit: contain;
+}
+
+.swiper-slide-image {
+  /* width: 85%; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: hsl(337, 41%, 32%) !important;
+  /* transition: all 0.2s; */
+  display: inline-block !important;
+  padding: 40px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: hsl(337, 100%, 71%) !important;
+  /* transform: scale(1.1); */
+  border-radius: 10px;
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.swiper-pagination {
+  bottom: 5px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: hsl(337, 41%, 32%) !important;
+}
+
 .w-custom {
   width: 25rem;
 }
@@ -9,7 +45,7 @@
 .btn-custom {
   background-color: hsl(337, 45%, 44%);
   color: hsl(0, 0%, 100%);
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 .btn-custom:hover {
   background-color: hsl(334, 42%, 26%);
@@ -27,7 +63,7 @@
 }
 .product-slider__btn {
   transform: scale(1.5);
-  transition: 0.4s all;
+  /* transition: 0.4s all; */
 }
 .product-slider__btn:hover {
   transform: scale(2);
@@ -84,7 +120,7 @@
   left: 0px;
   margin-right: 10px;
   border-radius: 5px;
-  transition: 0.4s all;
+  /* transition: 0.4s all; */
   transform: scale(0.9);
 }
 .psmallimg:hover {
@@ -98,6 +134,15 @@
 @media screen and (min-width: 710px) {
   .w-custom {
     width: 96rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: hsl(337, 41%, 32%) !important;
+    /* transition: all 0.2s; */
+    display: none !important;
   }
 }
 
